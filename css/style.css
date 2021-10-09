@@ -5,8 +5,8 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /*background-image: url("/img/back1.jpg");*/
-    /*background-size: cover;*/
+    display: flex;
+    flex-direction: column;
 }
 .navba{
     display: flex;
@@ -16,7 +16,6 @@ body{
     font-weight: bold;
     height: 10vh;
     align-items: center;
-
 }
 
 .head{
@@ -139,7 +138,6 @@ section{
 .paragraph-light{
     margin-top: 25px;
     opacity: 0.9;
-    /*line-height: 25px;*/
     line-break: auto;
     font-size: 20px;
 }
@@ -208,7 +206,6 @@ div.container.exp1{
     margin: 0 auto;
     padding: 20px;
     box-shadow: 0px 0px 20px #00000010;
-    /*background-color: white;*/
     border-radius: 8px;
     margin-bottom: 20px;
 }
@@ -235,17 +232,11 @@ button[type="submit"] {
     margin-top: 5%;
     border: solid 1px;
     outline: none;
-    /*padding: 20px;*/
     font-size: 24px;
-    /*border-radius: 8px;*/
     font-family: 'Montserrat', sans-serif;
-    /*color: rgb(27, 166, 247);*/
-    /*text-align: center;*/
     cursor: pointer;
-    /*transition: 0.3s ease background-color;*/
 }
 button[type="submit"]:hover {
-    /*background-color: rgb(214, 226, 236);*/
     background-color:dodgerblue;
     color:#fff;
 }
@@ -279,4 +270,69 @@ button[type="submit"]:hover {
         opacity: 0;
         pointer-events: none;
     }
+}
+/*footer style*/
+.footer{
+    margin-top: auto;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer p{
+    color: black;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    color: black;
+    font-size: 1.3rem;
+}
+.socials a:hover{
+    color: dodgerblue;
+    transition: color.4s ease;
+}
+@media only screen and (max-width: 700px) {
+   .navba{
+       display: flex;
+       width: 70%;
+       position: absolute;
+       justify-content: space-around;
+       font-family: 'Montserrat', sans-serif;
+       font-size: 20px;
+       font-weight: bold;
+       height: 10vh;
+       align-items: center;
+       z-index: 2;
+   }
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+.contact a{
+    margin: 0 20px;
+    text-align: center;
+}
+.contact a:hover{
+    color: dodgerblue;
+    transition: color.4s ease;
 }
